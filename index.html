@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=4, initial-scale=1.0">
+    <link rel="shortcut icon" href= "./img/favicon.ico" type="image/x-icon" />
+    <title>Bookmark</title>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap"
+        rel="stylesheet">
+    <script src="js/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+
+    <link href=" https://cdn.jsdelivr.net/npm/sweetalert2@11.14.5/dist/sweetalert2.min.css " rel="stylesheet">
+
+</head>
+
+<body>
+
+    <main class="py-5">
+        <div class=" header container d-flex flex-column ">
+
+            <h1 class="align-self-center"> Bookmarker </h1>
+
+
+            <div class="data-form">
+
+                <div class=" py-2 d-flex  justify-content-center align-items-center">
+
+                    <h2> <i class="fa-solid fa-bookmark"></i> Bookmark your favorite sites <i
+                            class="fa-solid fa-bookmark"></i></h2>
+
+                </div>
+
+                <div class="mb-3 p-2 ">
+                    <label for="siteNameInput" class="form-label"> <i class="fa-solid fa-book-bookmark pe-2"></i> Site
+                        Name</label>
+                    <input oninput="validation(this)" type="text" class="form-control " id="siteNameInput"
+                        placeholder="Bookmark Name">
+                </div>
+                <div class="mb-3 p-2">
+                    <label for="siteUrlInput" class="form-label"> <i class="fa-solid fa-link pe-2"></i> Site URL</label>
+                    <input oninput="validation(this)" type="text" class="form-control " id="siteUrlInput"
+                        placeholder="Website URL">
+                </div>
+                <div class="text-center my-3"><button onclick="addSiteData()" id="submitBtn"
+                        class="btn btn-submit px-5">submit</button></div>
+
+            </div>
+            <div>
+                <table class="table mt-4 text-center bg-light ">
+                    <thead>
+                        <tr>
+                            <th>Index </th>
+                            <th>Website Name</th>
+                            <th>Visit</th>
+                            <th>Delete</th>
+                        </tr>
+                    <tbody id="bodyTable">
+                      
+
+
+                    </tbody>
+                    </thead>
+                </table>
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="
+https://cdn.jsdelivr.net/npm/sweetalert2@11.14.5/dist/sweetalert2.all.min.js
+"></script>
+    <script src="./js/index.js"></script>
+
+</body>
+
+</html>
